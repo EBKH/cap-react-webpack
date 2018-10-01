@@ -1,0 +1,27 @@
+# Elixir CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-elixir/ for more details
+version: 2
+jobs:
+  build:
+    working_directory: ~/cap-react-webpack
+
+    docker:
+      # specify the version here
+      - image: circleci/elixir:1.7
+
+      # Specify service dependencies here if necessary
+      # CircleCI maintains a library of pre-built images
+      # documented at https://circleci.com/docs/2.0/circleci-images/
+      - image: circleci/postgres:10
+
+    steps:
+      - checkout
+
+      # specify any bash command here prefixed with `run: `
+      - run: mix local.hex --force
+      - run: mix deps.get
+      - run: mix local.rebar --force
+      - run: mix ecto.setup
+      - run: mix docs
+      - run: mix test
