@@ -48,6 +48,7 @@ defmodule CapPhoenixReactWebpack.Mixfile do
       {:phoenix, "~> 1.3.2"},
       {:phoenix_ecto, "~> 3.2"},
       {:phoenix_pubsub, "~> 1.0"},
+      {:plug_static_index_html, "~> 1.0"},
       {:postgrex, ">= 0.0.0"}
     ]
   end
