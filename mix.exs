@@ -16,7 +16,7 @@ defmodule CapPhoenixReactWebpack.Mixfile do
       name: "Phx React Webpack",
       source_url: "https://github.com/EBKH/cap-react-webpack/",
       docs: [
-        output: "priv/docs",
+        output: "priv/webpack-app/build/docs",
         logo: "priv/static/lg_vl_bk.png",
         extras: ["README.md"]
       ]

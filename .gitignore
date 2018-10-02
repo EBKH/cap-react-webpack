@@ -4,7 +4,6 @@
 /db
 /deps
 /*.ez
-Procfile
 
 # Generated on crash by the VM
 erl_crash.dump

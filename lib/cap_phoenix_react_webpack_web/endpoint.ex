@@ -13,7 +13,7 @@ defmodule CapPhoenixReactWebpackWeb.Endpoint do
     at: "/",
     from: "priv/webpack-app/build/",
     gzip: false,
-    only: ~w(css fonts images js static favicon.ico robots.txt service-worker.js index.html)
+    only: ~w(css fonts images js static docs favicon.ico robots.txt service-worker.js index.html)
   )
 
   # Code reloading can be explicitly enabled under the
