@@ -1,8 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+const sum = require('./sum');
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+console.log('MEW');
+
+const total = sum(10, 5);
+console.log(total);
